@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Portfolio</title>
+  <link rel="stylesheet" href="resources/stylesheet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <h1 class="site-title">ellen bg</h1>
+      <nav class="nav">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+         <section class="hero">
+        <div class="container">
+            <div class="rooproject-text">
+            <h2>The Roo Crew Website</h2>
+            </div>
+            <p class="hero-subtext">
+            Project Scope: Art Direction, Brand Development and Identity, Packaging, Copywriting, Website Development.
+            </p>
+            <p class="hero-subtext">
+            Project Duration: May 2025 (one month).
+            </p>
+            <p class="hero-subtext">
+            While working through a full-stack development online course, I began testing my web development
+            skills by building a quirky brand for a local petsitting company. I designed the brand, logo,
+            copy, and website using Adobe products, HTML, CSS, and JavaScript.
+            </p>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <section class="rooproject-detail">
+        <div class="rooproject-image">
+        <img src="resources/roocrewweb.png" alt="Screenshot of Roo Crew Homepage" class="clickable-img" />
+        </div>
+        <div class="rooproject-text">
+        <h2>A playful, professional brand</h2>
+        <p>Using Adobe Creative Suite, I created a quirky logo for the brand that appears
+        on every page of the website. Most of the website is written from the point of
+        view of the dogs themselves, to lend a playful and comforting tone to the website.
+        </p>
+        </div>
+      </section>
+        
+        <section class="rooproject-gallery">
+            <img src="resources/roocrewabout.png" alt="Project image 1" class="clickable-img" />
+            <img src="resources/roocrewabout2.png" alt="Project image 2" class="clickable-img" />
+            <img src="resources/roocrewmenu.png" alt="Project image 3" class="clickable-img" />
+            <img src="resources/roocrewabout3.png" alt="Project image 4" class="clickable-img" />
+        </section>
+
+
+
+    <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <p>© 2025 ellen bg</p>
+      <p>crafted with care and a splash of color</p>
+    </div>
+    <div class="footer-right">
+      <a href="mailto:ellenbg94@gmail.com" class="footer-email">ellenbg94@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+
+  </div>
+
+<!-- Modal lightbox (place once at bottom of page body) -->
+<div id="imgModal" class="image-modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<script>
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImage");
+  const closeBtn = document.querySelector(".close");
+
+  document.querySelectorAll('.clickable-img').forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = "none";
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
+
+
+</body>
+</html>
