@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Portfolio</title>
+  <link rel="stylesheet" href="resources/stylesheet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <h1 class="site-title">ellen bg</h1>
+      <nav class="nav">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="about-section">
+        <div class="about-content">
+          <div class="about-image">
+            <img src="resources/ellenfoto.png" alt="Ellen BG portrait">
+          </div>
+          <div class="about-text">
+            <h2>Hi, I'm Ellen.</h2>
+            <p>
+              I'm a scientist turned writer, editor, and creative strategist.
+            </p>
+            <p>
+            As far back as I can remember, I've been a joyful dabbler — 
+            the kind of kid who could ace a math test in the morning, 
+            hit every note at a piano recital after lunch, and win the soccer game 
+            before dinner. I didn't just pick one lane; I learned to run the whole track.
+            </p>
+            <p> 
+            That spirit stuck with me. Today, I'm still that curious, quick-on-her-feet
+            multitasker who channels her energy and skills into writing sharp copy, 
+            editing with precision, designing intuitive experiences, 
+            and wearing every hat in between.
+            </p>
+            <p>
+            I have a BA in Economics and Environmental Studies from Tulane 
+            University and a Master of Science in Geography from Texas A&M University, 
+            where I worked aboard two research cruises studying deep-sea coral in the 
+            Pacific and spelunked in a central Texas cave in pursuit of climate knowledge.
+            </p>
+            <p>
+            I believe that good design and clear narratives can make even the complex feel 
+            accessible. I am eager to bring my editorial leadership, scientific 
+            rigor, UX sensibility, and love of narrative to your next project. 
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+      
+
+   <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <p>© 2025 ellen bg</p>
+      <p>crafted with care and a splash of color</p>
+    </div>
+    <div class="footer-right">
+      <a href="mailto:ellenbg94@gmail.com" class="footer-email">ellenbg94@gmail.com</a>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
