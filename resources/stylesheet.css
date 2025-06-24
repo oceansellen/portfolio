@@ -16,6 +16,10 @@ body {
 
 }
 
+p {
+  color:#e6ddd6;
+}
+
 a {
   color:#9177F2;
 }
@@ -328,6 +332,7 @@ abbr[aria-label]:focus::after {
   text-align: left;
   font-weight: 600;
   margin-bottom: 0.25rem; /* Reduce space between label and input */
+  color:#e6ddd6;
 }
 
 .contact-form input,
