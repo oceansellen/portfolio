@@ -454,6 +454,54 @@ abbr[aria-label]:focus::after {
   cursor: pointer;
 }
 
+/* Grid container for all projects */
+.webproject-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Each item (image + text block) */
+.webproject-item {
+  text-align: center;
+}
+
+/* Image styles */
+.webproject-item img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+/* Text styles */
+.webproject-item h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  color: #9177F2;
+  margin-bottom: 1rem;
+}
+
+.webproject-item p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #e6ddd6;
+  line-height: 1.7;
+  text-align: left;
+}
+
+/* Responsive: Stack into one column on small screens */
+@media (max-width: 768px) {
+  .webproject-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* === Lightbox modal styles === */
 .image-modal {

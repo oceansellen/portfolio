@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Portfolio</title>
+  <link rel="stylesheet" href="resources/stylesheet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <h1 class="site-title">ellen bg</h1>
+      <nav class="nav">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+         <section class="hero">
+        <div class="container">
+            <div class="rooproject-text">
+            <h2>Forest Service Error Page Redesign</h2>
+            </div>
+            <p class="hero-subtext">
+            Project Scope: Art Direction, Brand Identity, UX Design and Writing, Website Development.
+            </p>
+            <p class="hero-subtext">
+            Project Duration: July 2025 (one day).
+            </p>
+            <p class="hero-subtext">
+            As part of an online course on UX Design and Writing, I completed a daily challenge
+            to redesign the error pages of a website I use frequently. I chose the Forest Service's website,
+            which has an existing 404 error page (pictured below) but no existing "under contstruction" 
+            website page. I wrote UI copy Write UI copy that helps humanize the website's UX by adhering 
+            to brand style and infusing a little creativity into the mix.
+            </p>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <section class="webproject-grid">
+
+        <div class="webproject-item">
+        <h2>Before: serious, stale copy</h2>
+        <img src="resources/before.png" alt="Screenshot of the existing Forest Service 404 error page" class="clickable-img" />
+        <p>In the existing 404 error page, the copy and design do not elevate brand identity
+            or lend themselves to a useful redirect. The user does not learn anything helpful
+            from this page and has a huge list of forest names to look through to find another
+            destination.
+        </p>
+        </div>
+      
+
+        <div class="webproject-item">
+        <h2>After: warm, playful copy</h2>
+        <img src="resources/after_404.png" alt="Screenshot of my redesign of the Forest Service 404 error page" class="clickable-img" />
+        <p>In redesigning this page, I wanted it to feel more humanized and easygoing.
+            To achieve that, I used paired a trail sign photo with text about going "off trail" 
+            because the page cannot be found.
+            </p>
+            <p>
+            I also wanted the page to be useful. I added a branded redirect button, and, instead of a long list of forest names at the 
+            end of the page, I added tidy boxes that link to recent feature stories. This can enhance the user's experience with the web page 
+            and improve their impression of the brand and company.
+            </p>
+        </div>
+
+        <div class="webproject-item">
+        <h2>After: a new maintenance page</h2>
+        <img src="resources/after_maint.png" alt="Screenshot of my redesign of the Forest Service maintenance error page" class="clickable-img" />
+        <p>The website does not have an "under maintenance" page. To help users differentiate which
+            pages are undergoing maintenance from those that simply do not exist, I created a 
+            playful maintenance page using the same format as my 404 error redesign. I matched 
+            the background photo of trail maintenance to the maintenance theme of the page. 
+            And, again, I added an opportunity to direct users to other useful links at the bottom.
+        </p>
+        </div>
+      </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+      <div class="footer-left">
+      <p>© 2025 ellen bg</p>
+      <p>crafted with care and a splash of color</p>
+      </div>
+      <div class="footer-right">
+      <a href="mailto:ellenbg94@gmail.com" class="footer-email">ellenbg94@gmail.com</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- Modal lightbox (place once at bottom of page body) -->
+<div id="imgModal" class="image-modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<script src="resources/lightbox.js"></script>
+
+</body>
+</html>
